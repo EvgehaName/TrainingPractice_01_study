@@ -15,7 +15,7 @@ namespace DES_Task_01
             int resultTemp;
             Console.Write("Введите какое количество золото у вас есть ?: ");
             
-            while (!int.TryParse(Console.ReadLine(), out goldEnter))
+            while (!int.TryParse(Console.ReadLine(), out goldEnter) || goldEnter < 0)
             {
                 Console.WriteLine("Вы неправильно ввели значение !");
                 Console.Write("Повторите ввод !\nВведите какое количество золото у вас есть ?:");
@@ -44,7 +44,7 @@ namespace DES_Task_01
             to_Out:
 
 
-
+            
             Console.ReadKey();
         }
     }
