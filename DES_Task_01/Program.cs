@@ -40,6 +40,12 @@ namespace DES_Task_01
                 }
                 goldEnter = goldEnter - buyCrystal * priceCrystal;
                 Console.WriteLine("Вы купили " + buyCrystal + " кристалов. У вас осталось " + goldEnter + " золота");
+                Console.WriteLine("Вы желаете продолжить покупку ? 1) Y(y) 2) N(n): ");
+                string exit = Console.ReadLine();
+                while (exit == "N" || exit == "n")
+                {
+                    goto to_Out;
+                }
             }
             to_Out:
 
